@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="background.css" />
+	<title>Background change</title>
+</head>
+<body id="body">
+		<button onclick="setBackgroundColor()">Click me!</button>
+</body>
+<script>
+// Math.random generates random numbers between 0 and 1. Multiply these numbers by our specified range and use Math.floor to round up to the nearest whole number. 
+const getRandomNumber = (maxNum) => 
+{
+	return Math.floor(Math.random() * maxNum);
+};
+// generate random numbers for RGB notation
+const getRandomColor = () => 
+  {
+	const r = getRandomNumber(255);
+	const g = getRandomNumber(255);
+	const b = getRandomNumber(255);
+	// return a string with the 3 random values
+	return `rgb(${r}, ${g}, ${b})`;
+};
+// pass the random generated color to our background element.
+const setBackgroundColor = () => 
+{
+	const randomColor = getRandomColor();
+	document.getElementById("body").style.backgroundColor = randomColor;
+}
+</script>
+</html>

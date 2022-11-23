@@ -1,0 +1,42 @@
+body, html {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.parallax {
+	/* The image used */
+	background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.SGq_rjjkDlQHtKUmvhtlogHaE5%26pid%3DApi&f=1&ipt=8a904806cc666d0896f46b806593c1c9d705d716b5ab6efd1395142bb473ae80&ipo=images');
+	background-color: black;
+	/* Full height */
+	height: 100vh; 
+  
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.parallax2 {
+	background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.tiTHKuakGuJHwLSMIm1DvwHaFj%26pid%3DApi&f=1&ipt=41dce03a6f42fce98c497281c3a8a235c582e91cb1550ef396ad3a42fc64bc10&ipo=images.jpg');
+	background-color: black;
+
+	height: 100vh; 
+  
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.mid_square {
+	background-color:black;
+	padding: 20% 10%;
+	font-size: 14px;
+	text-align: center;
+	color: white;
+}
+.parallax_text {
+	color: white;
+	font-size: 14px;
+	text-align: center;
+	padding: 20%;
+}
